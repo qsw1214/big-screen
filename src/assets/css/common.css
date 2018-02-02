@@ -1,0 +1,260 @@
+/*
+ * @Author: Mr.zhao
+ * @Date: 2018-01-15 08:51:57
+ * @Last Modified by: Mr.zhao
+ * @Last Modified time: 2018-01-15 09:55:58
+ */
+@import url("http://fonts.googleapis.com/css?family=Wallpoet");
+/* css resize */
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0
+}
+
+ul.clearfix li {
+  float: left
+}
+
+.clearfix {
+  *zoom: 1
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline
+}
+
+* {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -icab-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box
+}
+
+@media screen and (max-device-width: 960px) {
+  body {
+    -webkit-text-size-adjust: none
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+select {
+  border: 1px solid #dee1e3;
+  font-size: 12px;
+  color: #333;
+  line-height: 12px
+}
+
+ul {
+  list-style: none
+}
+
+ol {
+  list-style: decimal inside
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer
+}
+
+a:hover {
+  text-decoration: none
+}
+
+a:focus {
+  outline: 0
+}
+
+span {
+  color: inherit
+}
+
+a img {
+  vertical-align: middle
+}
+
+label[for] {
+  cursor: pointer
+}
+
+.no_borderL {
+  border-left: 0 !important;
+}
+
+.no_borderR {
+  border-right: 0 !important;
+}
+
+.red_txt {
+  color: #ff71b0 !important;
+}
+
+.green_txt {
+  color: #319b66 !important;
+}
+
+.no_padding {
+  padding: 0 !important;
+}
+
+/* 主页布局 */
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  background: #030e20;
+  font-family: '微软雅黑', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url(../../../static/images/bg.jpg) no-repeat;
+}
+
+/* 加载动画 */
+.loading {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loading h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.loading span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  margin: 3px;
+  background: #007DB6;
+  border-radius: 100%;
+  -webkit-animation: loading 1s infinite alternate;
+  animation: loading 1s infinite alternate;
+}
+
+.loading span:nth-of-type(2) {
+  background: #008FB2;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.loading span:nth-of-type(3) {
+  background: #009B9E;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.loading span:nth-of-type(4) {
+  background: #00A77D;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.loading span:nth-of-type(5) {
+  background: #00B247;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.loading span:nth-of-type(6) {
+  background: #5AB027;
+  -webkit-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+}
+
+.loading span:nth-of-type(7) {
+  background: #A0B61E;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#datavLoading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: #030e20;
+}
+
+.datavLayout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}

@@ -1,0 +1,115 @@
+.odometer.odometer-theme-digital {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+
+.odometer.odometer-theme-digital .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+
+.odometer.odometer-theme-digital .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden;
+}
+
+.odometer.odometer-theme-digital .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.odometer.odometer-theme-digital .odometer-digit .odometer-ribbon {
+  display: block;
+  text-align: center;
+}
+
+.odometer.odometer-theme-digital .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+}
+
+.odometer.odometer-theme-digital .odometer-digit .odometer-value {
+  display: block;
+  text-align: center;
+  -webkit-transform: translateZ(0);
+}
+
+.odometer.odometer-theme-digital .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.odometer.odometer-theme-digital.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+}
+
+.odometer.odometer-theme-digital.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.odometer.odometer-theme-digital.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.odometer.odometer-theme-digital.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.odometer.odometer-theme-digital {
+  font-family: "Wallpoet", monospace;
+  font-size: 48px;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+}
+
+.odometer.odometer-theme-digital .odometer-digit {
+  margin: 0 5px;
+  padding: 0 10px;
+  height: 80px;
+  text-align: center;
+  border: 2px solid #013266;
+  background: #021b34;
+  border-radius: 5px;
+}
